@@ -1,0 +1,61 @@
+@import "variables";
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Montserrat", "Roboto", sans-serif;
+  color: #000;
+  font-style: normal;
+  background-color: #fff;
+
+  box-sizing: border-box;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/montserrat-regular.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 800;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/montserrat-800.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/montserrat-500.woff") format("woff");
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+

@@ -1,0 +1,105 @@
+@import "scaffolding";
+
+body {
+  border: .1px solid transparent;
+}
+
+.header {
+  padding: 20px 11px;
+  margin: 0;
+  border: 1px solid #000;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__delivery {
+    display: none;
+  }
+
+  &__about-phone {
+    display: none;
+  }
+
+  &__phone {
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+  }
+
+  &__number{
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  &__logo{
+    width: 111px;
+    height: 16px;
+  }
+}
+
+/*Tablet width*/
+
+@media (min-width: $tablet-width) {
+  .page-header {
+
+    align-items: normal;
+
+    &__delivery {
+      display: block;
+      color: #9a9a9a;
+      font-size: 14px;
+      margin-right: auto;
+    }
+
+    &__about-phone {
+      display: block;
+      color: #9a9a9a;
+      font-size: 12px;
+      margin-left: auto;
+    }
+
+    &__number{
+      font-size: 20px;
+
+      &::before{
+        content: url("../../build/img/phone-icon.svg");
+        width: 15px;
+        height: 15px;
+        margin-right: 10px;
+      }
+    }
+
+    &__logo{
+      width: 225px;
+    }
+
+    &__logo-image{
+      width: 198px;
+      height: 29px;
+
+      padding-top: 9px;
+    }
+
+    &__phone{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .header{
+    padding: 26px 22px;
+  }
+
+
+}
+
+
+/*Desktop width*/
+
+@media (min-width: $desktop-width) {
+
+}
