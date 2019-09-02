@@ -12,7 +12,8 @@
 <body>
 <header class="page-header header">
     <a class="page-header__logo" href="#">
-        <img class="page-header__logo-image" src="build/img/logo-desktop.png" alt="Шведская горечь" width="198" height="29">
+        <img class="page-header__logo-image" src="build/img/logo-desktop.png" alt="Шведская горечь" width="198"
+             height="29">
     </a>
     <p class="page-header__delivery">Доставка по всей России</p>
     <ul class="page-header__phone bitter-phone">
@@ -22,28 +23,43 @@
 </header>
 <main class="page-main">
     <section class="about">
-        <p class="about__what-is">Сбор трав</p>
-        <h1 class="about__name">Шведская горечь</h1>
-        <p class="about__intro">Не имеет аналогов в мире по оздоровительной силе и широте лечебных свойств</p>
-        <div class="about__packing"></div>
+        <div class="wrapper-content">
+            <div class="about__packing-wrapper">
+                <div class="about__packing"></div>
+                <!--<img src="build/img/packing-mobile.png" alt="Вид упаковки">-->
+            </div>
+
+            <div class="about__info-wrapper">
+                <div class="about__info">
+                    <p class="about__what-is">Сбор трав</p>
+                    <h1 class="about__name">Шведская горечь</h1>
+                    <p class="about__intro">Не имеет аналогов в мире по оздоровительной силе и широте лечебных
+                        свойств</p>
+                </div>
+            </div>
+            <div class="about-more">
+                <h2 class="visually-hidden">Полная информация о бальзаме</h2>
+                <button class="about-more__btn-mobile button-for-all" type="button">Узнать больше</button>
+                <form class="about-more__form about-more__form-toggle" action="#" method="post">
+                    <p class="about-more__info">Узнайте подробнее<br> о бальзаме</p>
+                    <p class="about-more__item about-more__item-first">
+                        <label for="about-more__name"></label>
+                        <input id="about-more__name" type="text" name="name" value="" placeholder="Имя">
+                    </p>
+                    <p class="about-more__item">
+                        <label for="about-more__phone"></label>
+                        <input id="about-more__phone" type="tel" name="phone" value="" placeholder="Телефон">
+                    </p>
+                    <div>
+                        <button class="about-more__button button-for-all" type="submit">Узнать <img src="build/img/arrow.svg" alt=""></button>
+                        <div class="clearfix"></div>
+                    </div>
+                </form>
+            </div>
+            <div class="clearfix"></div>
+        </div>
     </section>
 
-    <section class="about-more">
-        <h2 class="visually-hidden">Полная информация о бальзаме</h2>
-        <button class="about-more__btn" type="button">Узнать больше</button>
-        <form class="about-more__form" action="#" method="post">
-            <p class="about-more__info">Узнайте подробнее о бальзаме</p>
-            <p class="about-more__item">
-                <label for="about-more__name">Имя</label>
-                <input id="about-more__name" type="text" name="name" value="" placeholder="">
-            </p>
-            <p class="about-more__item">
-                <label for="about-more__phone">Телефон</label>
-                <input id="about-more__phone" type="tel" name="phone" value="" placeholder="">
-            </p>
-            <button class="about-more__button" type="submit">Узнать</button>
-        </form>
-    </section>
 
     <section class="facts">
         <h2 class="visually-hidden">Факты о бальзаме</h2>
