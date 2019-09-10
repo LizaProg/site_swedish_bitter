@@ -1,0 +1,128 @@
+@import "variables";
+
+/*page-header*/
+
+.header {
+  padding: 20px 11px;
+  margin: 0;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__delivery {
+    display: none;
+  }
+
+  &__about-phone {
+    display: none;
+  }
+
+  &__phone {
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+  }
+
+  &__number {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  &__logo {
+    width: 111px;
+    height: 16px;
+  }
+}
+
+/*SECTION HEADER EXTRA MEDIA QUERIES*/
+
+@media (min-width: $tablet-min-width) {
+  .page-header__logo {
+    width: 198px;
+    height: 29px;
+  }
+}
+
+@media (max-width: 380px) {
+  .page-header__logo {
+    width: 111px;
+    height: 16px;
+  }
+}
+
+/*SECTION HEADER EXTRA MEDIA QUERIES END*/
+
+/*Tablet width*/
+
+/*@media (min-width: $tablet-min-width) {*/
+@media (min-width: 655px) {
+
+  .page-header {
+    align-items: normal;
+
+    &__delivery {
+      display: block;
+      color: #9a9a9a;
+      font-size: 14px;
+      margin-right: auto;
+    }
+
+    &__about-phone {
+      display: block;
+      color: #9a9a9a;
+      font-size: 12px;
+      margin-left: auto;
+    }
+
+    &__number {
+      font-size: 20px;
+
+      &::before {
+        content: url("../../build/img/phone-icon.svg");
+        width: 15px;
+        height: 15px;
+        margin-right: 10px;
+      }
+    }
+
+    &__logo {
+      width: 225px;
+    }
+
+    &__logo-image {
+      width: 198px;
+      height: 29px;
+
+      padding-top: 9px;
+    }
+
+    &__phone {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .header {
+    padding: 26px 22px;
+  }
+}
+
+/*Desktop width*/
+
+@media (min-width: $desktop-width) {
+  .page-header {
+
+    max-width: 1200px;
+    margin: 0 auto;
+
+    &__delivery {
+      font-size: 16px;
+    }
+  }
+}
+
+/*page-header end*/

@@ -1,0 +1,180 @@
+@import "variables";
+
+/*facts*/
+
+.facts {
+  &__item {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 45px;
+  }
+
+  &__item:last-child {
+    margin-bottom: 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 60px;
+    margin-bottom: 55px;
+
+    /*background-color: rgba(23, 23, 23, 0.5);*/
+  }
+
+  &__less, &__description {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__less {
+    /*для бордера по ширине контента*/
+    display: inline-block;
+    font-size: 24px;
+    color: $darkgreen;
+    border-bottom: 3px solid $darkgreen;
+    padding-bottom: 10px;
+  }
+
+  &__description {
+    max-width: 200px;
+    font-size: 16px;
+    margin-top: 25px;
+  }
+}
+
+/*Tablet width*/
+
+@media (min-width: $mobile-width-only) {
+  .facts {
+
+    &__wrapper {
+      width: 75%;
+      margin: 0 auto;
+
+      margin-top: 130px;
+      margin-bottom: 140px;
+
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: stretch;
+
+    }
+
+    &__item {
+      width: 50%;
+      padding: 0;
+      margin: 0;
+      padding-left: 40px;
+      padding-bottom: 110px;
+
+      box-sizing: border-box;
+    }
+
+    &__item:nth-child(3) {
+      padding-bottom: 0;
+    }
+
+    &__item:nth-child(4) {
+      padding-bottom: 0;
+    }
+
+    &__item:nth-child(2n) {
+      padding-left: 80px;
+    }
+
+    &__less,
+    &__description {
+      padding: 0;
+      margin: 0;
+    }
+
+    &__less {
+      position: relative;
+    }
+
+    &__less::before {
+      position: absolute;
+      display: block;
+      content: "";
+      height: 15px;
+      width: 15px;
+      border: 6px solid #e4eddc;
+      border-radius: 50%;
+
+      top: -35px;
+      left: -35px;
+    }
+
+    &__description {
+      max-width: none;
+    }
+  }
+
+}
+
+/*SECTION FACTS EXTRA MEDIA QUERIES*/
+
+.facts__wrapper {
+
+}
+
+/*SECTION FACTS EXTRA MEDIA QUERIES END*/
+
+/*Desktop width*/
+
+@media (min-width: $desktop-width) {
+  .facts {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    &__wrapper {
+      width: 100%;
+      flex-wrap: nowrap;
+    }
+
+    &__item {
+      width: 25%;
+      margin: 0;
+      padding: 0;
+    }
+
+    &__less, &__description {
+      margin: 0;
+      padding: 0;
+    }
+
+    &__item:nth-child(2n) {
+      padding: 0;
+      margin: 0;
+    }
+
+    &__item:nth-child(odd) {
+      margin-left: 85px;
+    }
+
+    &__item:nth-child(2) {
+      margin-left: 100px;
+    }
+
+    &__item:nth-child(4) {
+      margin-left: 65px;
+    }
+
+    &__less::before {
+      position: absolute;
+      display: block;
+      content: "";
+      height: 15px;
+      width: 15px;
+      border: 6px solid #e4eddc;
+      border-radius: 50%;
+    }
+  }
+}
+
+/*facts end*/
