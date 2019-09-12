@@ -1,0 +1,270 @@
+@import "variables";
+
+.reasons {
+  &__wrapper-first {
+    width: 100%;
+  }
+
+  &__wrapper-second {
+    width: 100%;
+    background-image: url(/build/img/girl-cup-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    padding-top: 244px;
+  }
+
+  &__question {
+    max-width: 280px;
+    margin: 0 auto;
+    margin-top: 60px;
+    padding: 0;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  &__some {
+    text-align: center;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin: 0;
+    margin-top: 25px;
+  }
+
+  &__why {
+    padding: 0;
+    margin: 0;
+  }
+
+  &__item {
+    position: relative;
+
+    padding: 0;
+    margin: 0;
+    margin-left: 30px;
+    margin-bottom: 25px;
+    margin-right: 10px;
+    list-style-type: none;
+
+    font-size: 14px;
+    line-height: 22px;
+
+    &::before {
+      position: absolute;
+      content: url("/build/img/arrow-item.svg");
+      width: 9px;
+      height: 13px;
+      left: -20px;
+      top: 1px;
+    }
+
+    &:first-child {
+      margin-top: 30px;
+    }
+
+    &:last-child {
+      margin-bottom: 30px;
+    }
+
+  }
+
+  &__other-country {
+    width: 275px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  &__button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 30px 0;
+
+    &-extra-name {
+      display: none;
+    }
+
+    img {
+      display: none;
+    }
+  }
+}
+
+/*Tablet width*/
+
+@media (min-width: 600px) {
+  .reasons {
+    &__wrapper-first {
+      width: 538px;
+      margin: 0 auto;
+    }
+
+    &__wrapper-second {
+      background-image: url(/build/img/girl-cup-tablet.jpg);
+      padding-top: 482px;
+    }
+
+    &__question {
+      max-width: 100%;
+      font-size: 30px;
+      line-height: 40px;
+      margin-top: 145px;
+    }
+
+    &__some {
+      font-size: 14px;
+      font-weight: 500;
+      margin-top: 40px;
+    }
+
+    &__item {
+      margin-bottom: 30px;
+      font-size: 16px;
+
+      &:first-child {
+        margin-top: 40px;
+      }
+
+      &:last-child {
+        margin-bottom: 50px;
+      }
+    }
+
+    &__wrapper {
+      width: 600px;
+      margin: 0 auto;
+      background-color: #fff;
+      border: .1px solid transparent;
+    }
+
+    &__wrapper-content {
+      width: 560px;
+      margin: 0 auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border: 1px solid #c8dcba;
+    }
+
+    &__other-country {
+      width: 80%;
+      padding: 0;
+      margin-top: 40px;
+      margin-left: 40px;
+      margin-bottom: 40px;
+      text-align: left;
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+
+    &__button {
+      cursor: pointer;
+
+      &-extra-name {
+        display: inline;
+      }
+
+      img {
+        display: inline-block;
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+/*Desktop width*/
+
+@media (min-width: $desktop-width) {
+  /*.reasons{
+    display: flex;
+    flex-direction: row-reverse;
+
+    max-width: 1720px;
+    margin: 0 auto;
+    background-color: red;
+
+    &__wrapper-first{
+      width: 50%;
+      background-color: hotpink;
+    }
+
+    &__wrapper-second{
+      width: 50%;
+      background-color: navajowhite;
+    }
+  }*/
+
+  .reasons {
+    max-width: 1720px;
+    margin: 0 auto;
+
+    position: relative;
+    margin-top: 200px;
+
+    .reasons-bg {
+      position: absolute;
+
+      background-image: url(/build/img/girl-cup-desktop.jpg);
+      width: 860px;
+      height: 645px;
+
+      right: 50%;
+    }
+
+    &__wrapper-first {
+      width: 50%;
+      margin-left: 50px;
+      margin-top: 45px;
+    }
+
+    &__wrapper-second {
+      background-image: none;
+      margin: 0;
+      padding: 0;
+
+      width: 50%;
+      position: relative;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: row-reverse;
+
+      margin: 0 auto;
+
+      max-width: 1200px;
+    }
+
+    &__question {
+      margin: 0;
+      text-align: left;
+      font-size: 40px;
+      line-height: 50px;
+    }
+
+    &__some {
+      text-align: left;
+      margin-top: 50px;
+    }
+
+    &__wrapper {
+      margin-top: 457px;
+    }
+
+    &__item {
+      margin-bottom: 50px;
+    }
+
+    &__item:first-child {
+      margin-top: 60px;
+    }
+  }
+}
