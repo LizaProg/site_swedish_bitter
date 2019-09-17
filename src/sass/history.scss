@@ -1,0 +1,334 @@
+@import "variables";
+
+/*history*/
+
+.history {
+  &__intro {
+    margin: 0 auto;
+    margin-top: 60px;
+    padding: 0;
+
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+  }
+
+  &__wrapper-story {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  &__story {
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 0;
+
+    font-size: 14px;
+  }
+
+  &__story:first-child {
+    margin-top: 25px;
+  }
+
+  &__story:last-child {
+    margin-bottom: 25px;
+  }
+
+  &__author-img {
+    width: 320px;
+    height: 382px;
+    margin: 0 auto;
+
+    background-image: url(/build/img/userpic-author-mobile.jpg);
+    background-repeat: no-repeat;
+  }
+
+  &__offer {
+    margin: 0;
+    margin-top: 30px;
+    text-align: center;
+
+    font-size: 14px;
+    line-height: 22px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  &__form {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+
+  &__form input[type=email] {
+    width: 100%;
+    border: 0;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #c8dcba;
+  }
+
+  /*изменение цвета, по центру placeholder*/
+  #history__form-email::-webkit-input-placeholder {
+    color: $darkgreen;
+    text-align: center;
+  }
+
+  #history__form-email::-moz-placeholder {
+    color: $darkgreen;
+    text-align: center;
+  }
+
+  /* Firefox 19+ */
+  #history__form-email:-moz-placeholder {
+    color: $darkgreen;
+    text-align: center;
+  }
+
+  /*изменение цвета placeholder end*/
+
+  &__item {
+    margin: 0;
+    margin-top: 35px;
+  }
+
+  &__button {
+    display: block;
+    margin-top: 35px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+
+    text-decoration: none;
+    text-align: center;
+    font-size: 12px;
+
+    img {
+      display: none;
+    }
+  }
+}
+
+/*Tablet width*/
+
+@media (min-width: 400px) {
+  .history {
+    max-width: 768px;
+    margin: 0 auto;
+    &__intro {
+      br {
+        display: none;
+      }
+
+      max-width: 420px;
+      margin-top: 125px;
+
+      font-size: 30px;
+      line-height: 40px;
+      font-weight: 500;
+    }
+
+    &__wrapper-story {
+      /*width: 100%;*/
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    &__story{
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 20px;
+    }
+
+    &__story:first-child {
+      margin-top: 45px;
+    }
+
+    &__story:last-child {
+      margin-bottom: 70px;
+    }
+
+
+
+    &__offer{
+      margin-top: 80px;
+      margin-bottom: 60px;
+      padding: 0;
+      text-align: left;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    /*изменение расположения placeholder*/
+    #history__form-email::-webkit-input-placeholder {
+      text-align: left;
+    }
+
+    #history__form-email::-moz-placeholder {
+      text-align: left;
+    }
+
+    /* Firefox 19+ */
+    #history__form-email:-moz-placeholder {
+      text-align: left;
+    }
+    /*изменение расположения end*/
+
+    &__button{
+      margin-top: 45px;
+      width: 80%;
+
+     /* img{
+        display: inline-block;
+      }*/
+    }
+
+    &__form{
+      margin: 0;
+      width: 80%;
+    }
+
+    &__author-form-wrapper{
+
+      max-width: 97.2%;
+      margin: 0 auto;
+
+      position: relative;
+
+    }
+
+    &__author-img{
+      position: absolute;
+
+      width: 352px;
+      height: 419px;
+
+      left: 50%;
+    }
+
+    &__mail{
+      width: 50%;
+      margin-right: 20px;
+    }
+
+
+  }
+
+}
+
+/*Tablet width EXTRA*/
+
+@media (min-width: 550px) {
+  .history {
+    &__author-img{
+      background-image: url(/build/img/userpic-author-tablet.jpg);
+    }
+
+    &__button{
+       img{
+         display: inline-block;
+       }
+    }
+  }
+}
+
+/*Desktop width*/
+
+@media (min-width: 769px) {
+  .history{
+    max-width: 1720px;
+    margin: 0 auto;
+    margin-top: 200px;
+
+    position: relative;
+
+    &__author-img-for-desktop{
+      position: absolute;
+
+      width: 774px;
+      height: 920px;
+
+      background-image: url(/build/img/userpic-author-desktop.jpg);
+
+      left: 53%;
+    }
+
+    &__wrapper-content{
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    &__wrapper-intro{
+      width: 50%;
+    }
+    
+    &__intro{
+      padding-top: 90px;
+      margin-bottom: 50px;
+      margin-top: 0;
+
+      text-align: left;
+
+      font-size: 30px;
+      line-height: 50px;
+      font-weight: 500;
+    }
+
+    &__wrapper-story{
+      max-width: 1720px;
+      margin: 0 auto;
+      background-color: #f6f9f3;
+
+      border: .1px solid transparent;
+    }
+
+    &__content-story{
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    &__container{
+      width: 50%;
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+
+    &__story:first-child {
+      margin-top: 50px;
+    }
+
+    &__story:last-child {
+      margin-bottom: 60px;
+    }
+
+    &__author-img{
+      display: none;
+    }
+
+    &__author-form-wrapper{
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    &__author-form-content{
+      max-width: 830px;
+      margin: 0 auto;
+    }
+
+    &__mail{
+      width: 50%;
+    }
+
+    &__offer{
+      margin-top: 50px;
+      margin-bottom: 40px;
+    }
+
+    &__button{
+      margin-top: 35px;
+    }
+  }
+}
+
+
+
+/*history end*/
