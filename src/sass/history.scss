@@ -190,6 +190,7 @@
     &__author-form-wrapper{
 
       max-width: 97.2%;
+      min-height: 420px;
       margin: 0 auto;
 
       position: relative;
@@ -307,6 +308,7 @@
     &__author-form-wrapper{
       max-width: 1200px;
       margin: 0 auto;
+      min-height: auto;
     }
 
     &__author-form-content{
@@ -328,7 +330,4 @@
     }
   }
 }
-
-
-
 /*history end*/
