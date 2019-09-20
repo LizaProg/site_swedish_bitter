@@ -85,27 +85,7 @@
 
 @media (min-width: 769px) {
   .saying {
-    /*position: relative;
-
-    &__background{
-      position: absolute;
-
-      width: 100%;
-      min-height: 615px;
-      background: url(/build/img/background-left.jpg) repeat-y, url(/build/img/background-right.jpg) repeat-y 100% 0;
-    }
-  }*/
-    /*&__background{
-
-      max-width: 100%;
-      height: 615px;
-      background: url("/build/img/bg-saying.jpg");
-      background-repeat: no-repeat;
-      background-size: contain;
-    }*/
-
-    background: url("/build/img/bg-saying.jpg");
-    background-repeat: no-repeat;
+    background: url(/build/img/background-left.png) repeat-y, url(/build/img/background-right.png) repeat-y 100% 0;
     background-size: contain;
     margin-top: 200px;
     border-top: none;
